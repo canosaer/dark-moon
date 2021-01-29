@@ -7,12 +7,60 @@
 	<title>  </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/main.css">
 
 </head>
 
 <body>
+
+	<header class="header">
+		<a href="#" class="header__title">Dark Moon</a>
+		<ul class="menu">
+			<li class="menu__item menu__item_toggle">
+				<figure class="menu__icon menu__icon_toggle"></figure>		
+			</li>
+			<li class="menu__item menu__item_search">
+				<figure class="menu__icon menu__icon_search"></figure>
+			</li>
+			<li class="menu__item menu__item_cart">
+				<figure class="menu__icon menu__icon_cart"></figure>
+			</li>
+		</ul>
+	</header>
+
+	<section class="banner"></section>
+
+	<section class="cta">
+		<h1 class="cta__heading">Pledge Support</h1>
+		<p class="cta__text">Be the first to enter the thrilling universe of Dark Moon!</p>
+	</section>
+
+	<section class="reward-display">
+		<h1 class="reward-display__heading">Select your reward</h1>
+		<div class="reward">
+			<h2 class="reward__heading">Welcome Cadet!</h2>
+			<img class="reward__image" load="lazy" alt="cadet ship" src="src/img/ship1.jpg">
+			<p class="reward__price">$1</p>
+			<div class="backers">
+				<span class="backers__num">0</span> backers
+			</div>
+			<a href="#" class="reward__button">Pledge</a>
+			<p class="reward__desc">Join the Dark Moon squadron and follow along to show your support. You'll receive all the project updates and will be first to know when the game is released.</p>
+			<h3 class="includes">Includes:</h3>
+			<ul class="includes__list">
+				<li class="includes__item">Dark Moon Squadron Membership</li>
+				<li class="includes__item">Project Updates</li>
+			</ul>
+			<div class="reward__more">Show more</div>
+			<div class="reward__less">Show less</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<p class="footer__text">&copy;2021 Eric Canosa</p>
+	</footer>
 
 	<script src="dist/js/main.js"></script>
 

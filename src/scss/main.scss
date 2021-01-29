@@ -1,6 +1,6 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
+CONTENT:	Crossroads Store
 AUTHOR:		Eric Canosa
 ==============================================
 
@@ -14,10 +14,107 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @use 'reset';
+@use 'variables';
+@use 'mixins';
 
 
-/* 1. STYLES ================================= */
+/* 1.STYLES ================================= */
 
 *, *::before, *::after {
 	box-sizing: border-box;
+}
+
+// font-family: 'ZCOOL QingKe HuangYou', cursive;
+// font-family: 'Gugi', cursive;
+// font-family: 'Bowlby One SC', cursive;
+
+body{
+	font-family: variables.$body-text;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+.header{
+	padding: 1.5rem 2%;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	align-items: center;
+
+	&__title{
+		font-family: variables.$title;
+		font-size: 1.625rem;
+		color: variables.$dark-gray;
+
+		&:hover{
+			filter: brightness(120%);
+		}
+	}
+	
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	width: 140px;
+
+	&__icon{
+		background-size: cover;
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+
+		&_toggle{
+			background: url(../../src/img/hamburger.png);
+			background-size: contain;
+			border: 1px solid rgba(0,0,0,0.3);
+		}
+
+		&_search{
+			background: url(../../src/img/magnifying-glass.svg);
+		}
+
+		&_cart{
+			background: url(../../src/img/icon-shopping-cart.svg);
+		}
+
+	}
+}
+
+.banner{
+	background: url(../../src/img/banner.jpg), radial-gradient(lightslategray, darkslategray);
+	background-blend-mode: hard-light;
+	background-size: cover;
+	background-position: bottom;
+	height: 12rem;
+}
+
+.cta{
+	display: flex;
+	flex-direction: column;
+	padding: 2.5rem;
+
+	&__heading{
+		color: variables.$dark-gray;
+		text-align: center;
+		font-size: 1.25rem;
+		font-weight: bold;
+		margin-bottom: 0.675rem;
+	}
+
+	&__text{
+		text-align: center;
+		color: variables.$light-gray;
+	}
+}
+
+.footer{
+	margin: 5%;
+
+	&__text{
+		color: #909097;
+	}
 }

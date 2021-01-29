@@ -1,18 +1,3 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -98,12 +83,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -118,38 +103,133 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
+/* 
+==============================================
+CONTENT:	Crossroads Store
+AUTHOR:		Eric Canosa
+==============================================
 
+TABLE OF CONTENTS:
 
+0. Reset
+1. STYLES
 
-/* 2. Content ================================= */
+==============================================
+*/
+/* 0. Reset ================================= */
+/* 1.STYLES ================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header {
+  padding: 1.5rem 2%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+.header__title {
+  font-family: "Gugi", cursive;
+  font-size: 1.625rem;
+  color: #241e12;
+}
+.header__title:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+.menu__icon {
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.menu__icon_toggle {
+  background: url(../../src/img/hamburger.png);
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.menu__icon_search {
+  background: url(../../src/img/magnifying-glass.svg);
+}
+.menu__icon_cart {
+  background: url(../../src/img/icon-shopping-cart.svg);
+}
+
+.banner {
+  background: url(../../src/img/banner.jpg), radial-gradient(lightslategray, darkslategray);
+  background-blend-mode: hard-light;
+  background-size: cover;
+  background-position: bottom;
+  height: 12rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+.cta__heading {
+  color: #241e12;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.675rem;
+}
+.cta__text {
+  text-align: center;
+  color: #706c64;
+}
+
+.footer {
+  margin: 5%;
+}
+.footer__text {
+  color: #909097;
+}
+/*# sourceMappingURL=main.css.map */
