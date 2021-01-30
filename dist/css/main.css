@@ -226,6 +226,43 @@ a {
   color: #706c64;
 }
 
+.reward-display {
+  display: flex;
+  flex-direction: column;
+}
+.reward-display__heading {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.reward {
+  border: 1px solid lightgray;
+  margin: 0.5rem auto;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.reward__heading {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.reward__image {
+  width: 18rem;
+  height: 9rem;
+  margin: 0 auto;
+  border-radius: 5%;
+  margin-bottom: 1.5rem;
+}
+.reward__price {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
 .footer {
   margin: 5%;
 }
