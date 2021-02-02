@@ -168,6 +168,11 @@ a {
   background-color: white;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+}
 .header__title {
   font-family: "Gugi", cursive;
   font-size: 1.625rem;
@@ -208,6 +213,11 @@ a {
   background-position: bottom;
   height: 12rem;
 }
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 25vw;
+  }
+}
 
 .cta {
   display: flex;
@@ -230,6 +240,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .reward-display {
+    flex-direction: row;
+    padding: 0 3%;
+    justify-content: space-between;
+  }
+}
 
 .section-heading {
   text-align: center;
@@ -249,6 +266,11 @@ a {
   position: relative;
   transition: max-height 1s;
   max-height: 28rem;
+}
+@media screen and (min-width: 768px) {
+  .reward {
+    width: 31%;
+  }
 }
 .reward__heading {
   font-weight: bold;

@@ -44,6 +44,10 @@ a {
 	background-color: white;
 	align-items: center;
 
+	@include mixins.tablet {
+		padding: 1rem;
+	}
+
 	&__title{
 		font-family: variables.$title;
 		font-size: 1.625rem;
@@ -90,6 +94,10 @@ a {
 	background-size: cover;
 	background-position: bottom;
 	height: 12rem;
+
+	@include mixins.tablet {
+		height: 25vw;
+	}
 }
 
 .cta{
@@ -114,6 +122,12 @@ a {
 .reward-display{
 	display:flex;
 	flex-direction: column;
+
+	@include mixins.tablet {
+		flex-direction: row;
+		padding: 0 3%;
+		justify-content: space-between;
+	}
 }
 
 .section-heading{
@@ -134,6 +148,10 @@ a {
 	position: relative;
 	transition: max-height 1s;
 	max-height: 28rem;
+
+	@include mixins.tablet {
+		width: 31%;
+	}
 
 	&__heading{
 		font-weight: bold;
