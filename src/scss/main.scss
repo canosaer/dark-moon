@@ -475,14 +475,13 @@ a {
 		text-decoration: underline;
 		padding: 1rem 0.25rem 0.25rem;
 	}
+
+	&__share{
+		color: variables.$light-gray;
+		font-size: 1.25rem;
+		cursor: pointer;
+	}
 	
-}
-
-
-.fa-share-square{
-	color: variables.$light-gray;
-	font-size: 1.25rem;
-	cursor: pointer;
 }
 
 .footer{

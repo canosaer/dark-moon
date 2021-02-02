@@ -565,8 +565,7 @@ a {
   text-decoration: underline;
   padding: 1rem 0.25rem 0.25rem;
 }
-
-.fa-share-square {
+.updates__share {
   color: #706c64;
   font-size: 1.25rem;
   cursor: pointer;
