@@ -198,6 +198,10 @@ a {
 		cursor:pointer;
 		text-decoration: underline;
 		padding: 0.25rem;
+
+		@include mixins.tablet {
+			margin-top: 0.5rem;
+		}
 	}
 
 	&__more{
@@ -304,6 +308,11 @@ a {
 		position: relative;
 		transition: max-height 1s;
 		max-height: 14rem;
+		max-width: 38.5rem;
+
+		@include mixins.tablet {
+			width: 50%;
+		}
 	}
 
 	&__text{
@@ -354,6 +363,10 @@ a {
 		cursor:pointer;
 		text-decoration: underline;
 		padding: 0.25rem;
+
+		@include mixins.tablet {
+			margin-top: 0.5rem;
+		}
 	}
 }
 
@@ -372,6 +385,11 @@ a {
 		position: relative;
 		transition: max-height 1s;
 		max-height: 29rem;
+		max-width: 38.5rem;
+
+		@include mixins.tablet {
+			width: 50%;
+		}
 	}
 
 	&__image{
@@ -408,7 +426,7 @@ a {
 		bottom: 0.5rem;
 		left: 0rem;
 		width: 100%;
-		padding: 0rem 2rem;
+		padding: 0rem 1rem;
 	}
 
 	&__details{

@@ -313,6 +313,11 @@ a {
   text-decoration: underline;
   padding: 0.25rem;
 }
+@media screen and (min-width: 768px) {
+  .reward__less {
+    margin-top: 0.5rem;
+  }
+}
 .reward__more {
   box-shadow: 0px -20px 10px 0px rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0px -20px 10px 0px rgba(255, 255, 255, 0.8);
@@ -408,6 +413,12 @@ a {
   position: relative;
   transition: max-height 1s;
   max-height: 14rem;
+  max-width: 38.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about__box {
+    width: 50%;
+  }
 }
 .about__text {
   padding: 0.5rem 0;
@@ -453,6 +464,11 @@ a {
   text-decoration: underline;
   padding: 0.25rem;
 }
+@media screen and (min-width: 768px) {
+  .about__less {
+    margin-top: 0.5rem;
+  }
+}
 
 .updates {
   display: flex;
@@ -469,6 +485,12 @@ a {
   position: relative;
   transition: max-height 1s;
   max-height: 29rem;
+  max-width: 38.5rem;
+}
+@media screen and (min-width: 768px) {
+  .updates__box {
+    width: 50%;
+  }
 }
 .updates__image {
   width: 100%;
@@ -500,7 +522,7 @@ a {
   bottom: 0.5rem;
   left: 0rem;
   width: 100%;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
 }
 .updates__details {
   display: flex;
