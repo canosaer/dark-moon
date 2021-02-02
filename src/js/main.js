@@ -4,6 +4,8 @@ let aboutExpandDIV = document.querySelector(`.about__more`)
 let aboutCollapseDIV = document.querySelector(`.about__less`)
 let allUpdateExpandDIVS = document.querySelectorAll(`.updates__more`)
 let allUpdateCollapseDIVS = document.querySelectorAll(`.updates__less`)
+let allRewardANCHORS = document.querySelectorAll(`.reward__button`)
+let backerCountP = document.querySelector(`.total-backers__count`)
 
 class RewardExpander{
  
@@ -164,6 +166,45 @@ class UpdateCollapser{
     }
 }
 
+class PledgeMaker{
+ 
+    element = null
+    
+    constructor(element, counter){
+        this.element = element
+        this.counter = counter
+        // this.identifier = element.parentNode.querySelector(`.reward__price`).textContent.substring(1)
+        this.backersSPAN = this.element.parentNode.querySelector(`.backers__num`)
+        this.setup()
+    }
+
+    setup() {
+
+        // axios.get(`http://circuslabs.net:3000/data/canosa-dm-pledge-${this.identifier}`).then((response) => {
+        //     this.backersSPAN.textContent = response.data.data.value
+        // })
+
+        console.log(this.counter)
+    
+        this.handleClick = (evt) => {
+            evt.preventDefault()
+            this.backersSPAN.textContent = parseInt(this.backersSPAN.textContent)+1
+            this.counter.textContent = parseInt(this.counter.textContent)+1
+
+            // axios.post(`http://circuslabs.net:3000/data/canosa-dm-pledge-${this.identifier}`, {
+            //     type: 'number',
+            //     action: '++'
+            // })
+            // axios.get(`http://circuslabs.net:3000/data/canosa-dm-pledge-${this.identifier}`).then((response) => {
+            //     this.backersSPAN.textContent = response.data.data.value
+            // })            
+        }
+
+        this.element.addEventListener(`click`, this.handleClick)
+
+    }
+}
+
 allRewardExpandDIVS.forEach((element) => {
     const rewardExpand = new RewardExpander(element)
 })
@@ -182,4 +223,8 @@ allUpdateExpandDIVS.forEach((element) => {
 
 allUpdateCollapseDIVS.forEach((element) => {
     const updateCollapse = new UpdateCollapser(element)
+})
+
+allRewardANCHORS.forEach((element) => {
+    const pledge = new PledgeMaker(element, backerCountP)
 })
