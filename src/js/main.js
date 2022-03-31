@@ -47,7 +47,7 @@ class RewardCollapser{
     setup() {
     
         this.handleClick = (evt) => {
-            this.rewardBox.style.maxHeight = `28rem`
+            this.rewardBox.style.maxHeight = `29rem`
             this.moreDIV.style.display = `flex`
             setTimeout(() =>{
                 this.moreDIV.style.opacity = `1`
@@ -153,7 +153,7 @@ class UpdateCollapser{
     setup() {
     
         this.handleClick = (evt) => {
-            this.updateBox.style.maxHeight = `29rem`
+            this.updateBox.style.maxHeight = `35rem`
             this.moreDIV.style.display = `flex`
             setTimeout(() =>{
                 this.moreDIV.style.opacity = `1`
